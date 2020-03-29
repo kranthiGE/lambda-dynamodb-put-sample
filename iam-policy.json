@@ -1,0 +1,47 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:BatchWriteItem",
+                "dynamodb:UpdateTimeToLive",
+                "dynamodb:PutItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:RestoreTableToPointInTime",
+                "dynamodb:CreateTableReplica",
+                "dynamodb:Scan",
+                "dynamodb:CreateBackup",
+                "dynamodb:DeleteTableReplica",
+                "dynamodb:UpdateContributorInsights",
+                "dynamodb:UpdateGlobalTable",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteTable",
+                "dynamodb:UpdateTableReplicaAutoScaling",
+                "dynamodb:UpdateContinuousBackups",
+                "dynamodb:CreateTable",
+                "dynamodb:UpdateGlobalTableSettings",
+                "dynamodb:RestoreTableFromBackup",
+                "dynamodb:CreateGlobalTable",
+                "dynamodb:DeleteBackup",
+                "dynamodb:UpdateTable"
+            ],
+            "Resource": [
+                "arn:aws:dynamodb:ap-south-1:*:table/groups"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "logs:*",
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        }
+    ]
+}

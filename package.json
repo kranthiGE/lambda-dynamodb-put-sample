@@ -1,0 +1,22 @@
+{
+  "name": "lambda-dynamodb-put-sample",
+  "version": "1.0.0",
+  "description": "sample lambda to write to dynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "package": "zip -r dynamo-put.zip .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dynamodb",
+    "lambda"
+  ],
+  "author": "kranthi kiran",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.432.0"
+  }
+}
